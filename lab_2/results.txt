@@ -1,17 +1,17 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0
-rootdir: /home/seidex/labs/lab_2
+rootdir: /home/seidex/labs/Chabak_IK-31/lab_2
 collected 5 items
 
 tests/tests.py .....                                                     [100%]
 
-============================== 5 passed in 0.85s ===============================
+============================== 5 passed in 0.70s ===============================
 ========================================
 Результат без параметрів: 
 No URL passed to function
 ========================================
 Результат з правильною URL: 
-Time is:  09:55:19 PM
-Date is:  11-02-2021
+Time is:  11:34:12 AM
+Date is:  11-03-2021
 success
 Доброї ночі

@@ -1,0 +1,7 @@
+INFO 2021-11-15 16:30:12,652 root : Server is available. Server time: 15.11.21 16:30
+INFO 2021-11-15 16:30:12,652 root : Viewed page: localhost:8000/health/
+INFO 2021-11-15 16:30:12,652 root : Server request contains this fields:
+INFO 2021-11-15 16:30:12,652 root : Key: date, Data: 15.11.21 16:30
+INFO 2021-11-15 16:30:12,652 root : Key: current_page, Data: localhost:8000/health/
+INFO 2021-11-15 16:30:12,652 root : Key: server_info, Data: OSName: Linux; NodeName: 0225abfc4a27; Release:5.11.0-40-generic; Version:#44~20.04.2-Ubuntu SMP Tue Oct 26 18:07:44 UTC 2021; Indentificator:x86_64
+INFO 2021-11-15 16:30:12,652 root : Key: client_info, Data: Browser: python-requests/2.26.0  IP: 172.17.0.1 

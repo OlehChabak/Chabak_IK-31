@@ -16,13 +16,6 @@ jobs:
       script: 
         - pipenv run pytest tests/tests.py || true
         - pipenv run python3 app.py || true
-    - stage: "Lab 3 build"
-      name: "Run Djungo Server and test it accessibility. Fail to run and test"
-      python: 3.8
-      install:
-        - cd ./lab3/
-        - pipenv install
-      script: ./scripts/travis-build.sh
     - stage: "Lab 4 build"
       name: "Build Docker images & Home task"
       services:
@@ -33,7 +26,8 @@ jobs:
         - docker build -f Dockerfile -t seidex/chabak_ik-31:django-travis .
         - docker build -f Dockerfile.mon -t seidex/chabak_ik-31:monitoring-travis .
         - docker images
-        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push seidex/chabak_ik-31:django-travis; docker push seidex/chabak_ik-31:monitoring-travis; else echo "PR skip deploy"; fi
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push seidex/chabak_ik-31:django-travis;  else echo "PR skip deploy"; fi
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker push seidex/chabak_ik-31:monitoring-travis; else echo "PR skip deploy"; fi
     - stage: "Lab 5 build"
       name: "Build and run Docker images via make"
       services:
@@ -49,4 +43,4 @@ jobs:
         - make docker-push
 branches:
   only:
-    - master
+    - main

@@ -19,4 +19,7 @@ DevOps labs of Chabak Oleh IK-31 group
 Переписав білд lab 5 і додав кроки Makefile які робили push імеджів у Docker Hub репозиторій.
 Посилання на мій Travis https://app.travis-ci.com/github/OlehChabak/Chabak_IK-31
 
-5. Після успішного виконання роботи відредагував свій персональний README.md у цьому репозиторію та створив pull request.
+5. Успішно виконав усі тести у Travis
+![tests](https://github.com/OlehChabak/Chabak_IK-31/blob/main/lab_6/Screenshot_2.png "tst")
+
+6. Відредагував свій персональний README.md у цьому репозиторію та створив pull request.
